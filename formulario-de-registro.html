@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Formulario</title>
+</head>
+<body>
+    <form action="/process" method="post">
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" required placeholder="Nombre..." >
+        </div>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido"required placeholder="Apellido..." >
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="email" >
+        </div>
+        <div>
+            <label for="password">Cotraseña:</label>
+            <input type="password" name="password" id="password" required placeholder="contraseña">
+        </div>
+        <div>
+            <label for="confirm-password">Confirme contraseña:</label>
+            <input type="password" name="confirm-password" id="confirm-password" required placeholder="contrseña">
+        </div>
+        <div>
+            <label for="date">Fecha de Nacimiento:</label>
+            <input type="date" id="date" name="date">
+        </div>
+        
+        <div>
+            <label>Género:</label><br>
+            <label>
+            <input type="checkbox" name="genero" value="mujer">Mujer</label>
+            <label>
+            <input type="checkbox" name="genero" value="hombre">Hombre</label>
+            <label>
+            <input type="checkbox" name="genero" value="no_binario">No binario</label>
+            <label>
+            <input type="checkbox" name="genero" value="prefiero_no_contestar">Prefiero no contestar</label>
+        </div>
+        <div>
+            <label>Escriba una pequeña descripción de usted:</label><br>
+            <textarea name="comment" cols="20" rows="3"></textarea>
+        </div>
+        <div>
+            <label for="lenguaje">Lenguaje Favorito</label>
+            <select id="lenguaje" name="lenguaje">
+                <option value="js">JAVASCRIPT</option>
+                <option value="py">Python</option>
+                <option value="c#">C#</option>
+                <option value="java">JAVA</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="accept" id="accept">
+            <label for="accept">Sí, quiero recibir noticias en mi correo.</label>
+        </div>
+        <div>
+            <label for="accept">Crear cuenta</label>
+            <button type="submit">Sign up</button>
+        </div>
+        <div>
+            *campos requeridos
+        </div>
+    </form>    
+    
+</body>
+</html>
